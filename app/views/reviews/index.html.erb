@@ -1,0 +1,24 @@
+<%= turbo_frame_tag "reviews" do %>
+<h1>Lista recenzji</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Gra</th>
+    <th>Użytkownik</th>
+    <th>Komentarz</th>
+    <th>Ocena</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @reviews.each do |review| %>
+    <tr>
+      <td><%= link_to review.game.title, game_path(review.game), data: { turbo_frame: "main" } %></td>
+      <td><%= review.user.name %></td>
+      <td><%= review.comment %></td>
+      <td><%= review.rating %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<%end %>
