@@ -1,0 +1,10 @@
+<%= turbo_frame_tag "games" do %>
+  <h1>Lista gier</h1>
+
+  <% @games.each do |game| %>
+    <div class="mb-2">
+      <strong><%= game.title %></strong><br>
+      <%= link_to "Szczegóły", game_path(game), data: { turbo_frame: "games" } %>
+    </div>
+  <% end %>
+<% end %>

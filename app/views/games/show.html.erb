@@ -1,0 +1,42 @@
+<%= turbo_frame_tag "games" do %>
+  <h1><%= @game.title %></h1>
+  <p><strong>Gatunek:</strong> <%= @game.genre %></p>
+  <p><strong>Rok wydania:</strong> <%= @game.year %></p>
+  <p><strong>Opis:</strong> <%= @game.description %></p>
+
+  <div class="mt-3">
+    <%= link_to "Dodaj wypożyczenie",
+                new_game_rental_path(game_id: @game.id),
+                class: "btn btn-success",
+                data: { turbo_frame: "rental_form" } %>
+
+    <%= link_to "Dodaj recenzję",
+                new_game_review_path(game_id: @game.id),
+                class: "btn btn-warning",
+                data: { turbo_frame: "review_form" } %>
+  </div>
+
+  <%= turbo_frame_tag "rental_form" %>
+  <%= turbo_frame_tag "review_form" %>
+
+
+  <h3 class="mt-4">Wypożyczenia</h3>
+  <ul class="list-group mb-3">
+    <% @game.rentals.each do |r| %>
+      <li class="list-group-item">
+        <%= r.user.name %> | <%= r.rented_on %> - <%= r.returned_on %>
+      </li>
+    <% end %>
+  </ul>
+
+  <h3>Recenzje</h3>
+  <ul class="list-group mb-3">
+    <% @game.reviews.each do |rev| %>
+      <li class="list-group-item">
+        <strong><%= rev.user.name %>:</strong> <%= rev.comment %> (Ocena: <%= rev.rating %>)
+      </li>
+    <% end %>
+  </ul>
+
+
+<% end %>

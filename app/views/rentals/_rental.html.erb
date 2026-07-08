@@ -1,0 +1,5 @@
+<p>
+  <strong><%= rental.user.name %></strong> wypożyczył <%= rental.game.title %>
+  od <%= rental.rented_on %>
+  <% if rental.returned_on %> do <%= rental.returned_on %><% else %>(nie oddana)<% end %>
+</p>

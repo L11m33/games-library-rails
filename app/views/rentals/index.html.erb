@@ -1,0 +1,27 @@
+<h1 class="mb-4">Lista wypożyczeń</h1>
+
+<%= turbo_frame_tag "rentals" do %>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Gra</th>
+      <th>Użytkownik</th>
+      <th>Od</th>
+      <th>Do</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @rentals.each do |rental| %>
+      <tr>
+        <td><%= link_to rental.game.title, rentals_path(rental.game), data: { turbo_frame_tag: "rental_form" } %></td>
+        <td><%= rental.user.name %></td>
+        <td><%= rental.rented_on %></td>
+        <td><%= rental.returned_on || "Jeszcze nie zwrócono" %></td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+
+
+<% end %>
+

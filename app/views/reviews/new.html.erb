@@ -1,0 +1,24 @@
+<%= turbo_frame_tag "review_form" do %>
+  <h3>Nowa recenzja</h3>
+
+  <%= form_with model: @review, url: reviews_path(game_id: @game.id) do |f| %>
+
+    <div class="mb-3">
+      <%= f.label :user_id %>
+      <%= f.collection_select :user_id, User.all, :id, :name, {}, class: "form-select" %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :rating %>
+      <%= f.number_field :rating, in: 1..5, class: "form-control" %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :comment %>
+      <%= f.text_area :comment, class: "form-control" %>
+    </div>
+
+    <%= f.submit "Dodaj", class: "btn btn-warning" %>
+
+  <% end %>
+<% end %>
