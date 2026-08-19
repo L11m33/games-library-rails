@@ -352,11 +352,11 @@ GEM
       railties (>= 6.0.0)
     stringio (3.2.0)
     thor (1.4.0)
-    thruster (0.1.17)
-    thruster (0.1.17-aarch64-linux)
-    thruster (0.1.17-arm64-darwin)
-    thruster (0.1.17-x86_64-darwin)
-    thruster (0.1.17-x86_64-linux)
+    thruster (0.1.25)
+    thruster (0.1.25-aarch64-linux)
+    thruster (0.1.25-arm64-darwin)
+    thruster (0.1.25-x86_64-darwin)
+    thruster (0.1.25-x86_64-linux)
     timeout (0.6.0)
     tsort (0.2.0)
     turbo-rails (2.0.20)
@@ -553,11 +553,11 @@ CHECKSUMS
   stimulus-rails (1.3.4) sha256=765676ffa1f33af64ce026d26b48e8ffb2e0b94e0f50e9119e11d6107d67cb06
   stringio (3.2.0) sha256=c37cb2e58b4ffbd33fe5cd948c05934af997b36e0b6ca6fdf43afa234cf222e1
   thor (1.4.0) sha256=8763e822ccb0f1d7bee88cde131b19a65606657b847cc7b7b4b82e772bcd8a3d
-  thruster (0.1.17) sha256=6f3f1de43e22f0162d81cbc363f45ee42a1b8460213856c1a899cbf0d3297235
-  thruster (0.1.17-aarch64-linux) sha256=1b3a34b2814185c2aeaf835b5ecff5348cdcf8e77809f7a092d46e4b962a16ba
-  thruster (0.1.17-arm64-darwin) sha256=75da66fc4a0f012f9a317f6362f786a3fa953879a3fa6bed8deeaebf1c1d66ec
-  thruster (0.1.17-x86_64-darwin) sha256=b49e4c52563d1476d3aa1e12f7f57febb4510ac163f6abeac7c7c0de8a54437f
-  thruster (0.1.17-x86_64-linux) sha256=77b8f335075bd4ece7631dc84a19a710a1e6e7102cbce147b165b45851bdfcd3
+  thruster (0.1.25) sha256=d97d704e91fa37d5858bc238dea6186f7310b633abfeea9f2ba814f252203716
+  thruster (0.1.25-aarch64-linux) sha256=495265b11fc3c3596ae0d70ed902b60db82dafb2a5b47a2c527d3176ee3cf311
+  thruster (0.1.25-arm64-darwin) sha256=20338360cce4035e787135ae154a10663f3d3d61b15bfa72df347fe9d982de57
+  thruster (0.1.25-x86_64-darwin) sha256=633d337baee05e8eacbc18e3986ea6bbf8ea237abd67f5e4351b8aa710623c5e
+  thruster (0.1.25-x86_64-linux) sha256=e5586003b34dc2f4200f8412101e906621e276bb294d41d1b63a3c41e348503d
   timeout (0.6.0) sha256=6d722ad619f96ee383a0c557ec6eb8c4ecb08af3af62098a0be5057bf00de1af
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   turbo-rails (2.0.20) sha256=cbcbb4dd3ce59f6471c9f911b1655b2c721998cc8303959d982da347f374ea95
